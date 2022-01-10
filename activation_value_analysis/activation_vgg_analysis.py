@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 #fig = plt.figure()
 
 activ1 = Activation()
-activ1.load(r'/nfs/a1/userhome/xiehailun/workingdir/new_study/result/vggface_test_fc8.act.h5')
+activ1.load(r'/nfs/a1/userhome/xiehailun/workingdir/new_study/result/vggface_test_fc3.act.h5')
 vggface_upright = activ1.get('fc8')
 
 face_upright,object_upright = np.split(vggface_upright,2,axis = 0)
