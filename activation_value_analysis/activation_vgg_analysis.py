@@ -32,7 +32,6 @@ average_corr = all_average.corr()
 
 #save out
 np.savetxt('/nfs/a1/userhome/xiehailun/workingdir/new_study/new_result/new_vggface_fc3.csv',average_corr,delimiter=',')
-plt.savefig('/nfs/a1/userhome/xiehailun/workingdir/new_study/result/new_vggface_fc3.tif')
 
 
 
