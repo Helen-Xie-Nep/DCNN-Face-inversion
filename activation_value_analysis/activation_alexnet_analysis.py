@@ -5,13 +5,13 @@ import matplotlib.pyplot as plt
 
 #input the activation value
 activ1 = Activation()
-activ1.load(r'/nfs/a1/userhome/xiehailun/workingdir/new_study/result/alexnet_test_fc8.act.h5')
+activ1.load(r'/nfs/a1/userhome/xiehailun/workingdir/new_study/result/alexnet_test_fc3.act.h5')
 alexnet_upright = activ1.get('fc3')
 
 face_upright,object_upright = np.split(alexnet_upright,2,axis = 0)
 
 activ2 = Activation()
-activ2.load(r'/nfs/a1/userhome/xiehailun/workingdir/new_study/result/alexnet_rotation_fc8.act.h5')
+activ2.load(r'/nfs/a1/userhome/xiehailun/workingdir/new_study/result/alexnet_rotation_fc3.act.h5')
 alexnet_inverted = activ2.get('fc3')
 face_inverted,object_inverted = np.split(alexnet_inverted,2,axis = 0)
 
