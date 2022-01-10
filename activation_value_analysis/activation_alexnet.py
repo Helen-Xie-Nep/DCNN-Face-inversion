@@ -34,5 +34,5 @@ dmask.set('fc3')
 activation = dnn.compute_activation(stimuli, dmask)
 
 # Save out 
-out_file = pjoin(TMP_DIR, '/nfs/a1/userhome/xiehailun/workingdir/new_study/result/alexnet_test_fc3.act.h5')
+out_file = pjoin(TMP_DIR, '/nfs/a1/userhome/xiehailun/workingdir/new_study/result/new_alexnet_fc3.act.h5')
 activation.save(out_file)
