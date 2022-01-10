@@ -12,7 +12,7 @@ vggface_upright = activ1.get('fc8')
 face_upright,object_upright = np.split(vggface_upright,2,axis = 0)
 
 activ2 = Activation()
-activ2.load(r'/nfs/a1/userhome/xiehailun/workingdir/new_study/result/vggface_rotation_fc8.act.h5')
+activ2.load(r'/nfs/a1/userhome/xiehailun/workingdir/new_study/result/vggface_rotation_fc3.act.h5')
 vggface_inverted = activ2.get('fc8')
 face_inverted,object_inverted = np.split(vggface_inverted,2,axis = 0)
 
